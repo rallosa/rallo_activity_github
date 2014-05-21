@@ -55,7 +55,7 @@ public class ActivityMain extends ActivityRallosa implements View.OnClickListene
         } else if ( resultCode == RESULT_OK ) {
             EditText oEditText = (EditText) findViewById(R.id.resultText);
             String resultText = data.getStringExtra("resultText");
-            //Log.i("rallo_activity", "rallosa+onActivityResult:  " + resultText);
+            Log.i(super.LOG_I_TEG, " onActivityResult:  " + resultText);
             oEditText.setText(resultText);
         }
     }
